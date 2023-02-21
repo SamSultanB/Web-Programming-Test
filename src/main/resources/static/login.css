@@ -1,0 +1,25 @@
+body {
+  background-color: #51DDFF;
+}
+.sex{
+    display: flex;
+    background-color: #EC4CE7;
+    height: 200px;
+    width: 900px;
+    margin: 20 auto;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.sexin{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
