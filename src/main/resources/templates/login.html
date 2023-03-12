@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,25 @@
     <link rel="stylesheet" href="/login.css">
 </head>
 
-<form th:action="@{/students}" th:object = "${student}" method="POST">
+<form th:action="@{/registration}" th:object = "${student}" method="POST">
     <div class="form-outline mb-4">
-        <input type="email" id="form2Example1" class="form-control" />
-        <label class="form-label" for="form2Example1">Email address</label>
+        <input id="form2Example1" class="form-control" th:field = "*{name}"/>
+        <label class="form-label" for="form2Example1">Name</label>
     </div>
 
     <!-- Password input -->
     <div class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control" />
+        <input id="1" class="form-control" th:field = "*{surname}"/>
+        <label class="form-label" for="form2Example2">Surname</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input id="2" class="form-control" th:field = "*{email}"/>
+        <label class="form-label" for="form2Example2">Email</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input id="form2Example2" class="form-control" th:field = "*{surname}"/>
         <label class="form-label" for="form2Example2">Password</label>
     </div>
 
